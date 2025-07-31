@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript</title>
+</head>
+<body>
+    <h1>Test JavaScript</h1>
+    <button onclick="testClick()">Cliquez ici</button>
+    <div id="result"></div>
+
+    <script>
+        console.log('✅ JavaScript chargé !');
+        
+        function testClick() {
+            console.log('🖱️ Bouton cliqué !');
+            document.getElementById('result').innerHTML = '✅ JavaScript fonctionne !';
+            alert('JavaScript fonctionne !');
+        }
+
+        // Test automatique au chargement
+        window.onload = function() {
+            console.log('✅ Page chargée !');
+            document.getElementById('result').innerHTML = '✅ Page chargée avec JavaScript !';
+        };
+    </script>
+</body>
+</html> 
